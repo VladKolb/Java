@@ -68,7 +68,7 @@ public class Main {
         //fifthTaskT3.sumAndProd(fifthTaskT3.enterNumber());
         //sixthTaskT3.findMax(sixthTaskT3.enterNumber());
         //System.out.println(seventhTaskT3.factorial(seventhTaskT3.enterNumber()));
-        //eighthTaskT3.numbersAmount();
+        eighthTaskT3.numbersAmount();
         //ninthTaskT3.luckyTickets();
         //tenthTaskT3.labelAmount();
         //eleventhTaskT3.symmetricalAmount();
@@ -86,7 +86,7 @@ public class Main {
         //tenthTaskT4.findStringWithMaxSum();
         //eleventhTaskT4.transposition();
         //twelfthTaskT4.reverseArray();
-        thirteenthTaskT4.competeTask();
+        //thirteenthTaskT4.competeTask();
     }
 
 }
