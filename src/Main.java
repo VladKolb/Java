@@ -82,11 +82,11 @@ public class Main {
         //sixthTaskT4.filter();
         //seventhTaskT4.findMinAndMaxValuesIndexes();
         //eighthTaskT4.merging();
-        //ninthTaskT4.deleteDuplicates();
+        ninthTaskT4.deleteDuplicates();
         //tenthTaskT4.findStringWithMaxSum();
         //eleventhTaskT4.transposition();
         //twelfthTaskT4.reverseArray();
-        thirteenthTaskT4.competeTask();
+//        thirteenthTaskT4.competeTask();
     }
 
 }
