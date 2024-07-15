@@ -10,7 +10,7 @@ public class TenthTaskT4 {
     // {10, 11, 12}
     //};
 
-    public void findStringWithMaxSum(){
+    public void findStringWithMaxSum(){ //findLineWithMaxSum
         int[][] matrix = {
                     {1, 2, 3},
                     {4, 5, 6},
@@ -19,7 +19,7 @@ public class TenthTaskT4 {
                     };
 
         int totalMaxSum = 0;
-        int stringIndex = 0;
+        int stringIndex = 0; //lineIndex
 
         for(int i = 0; i < matrix.length; i++){
             int totalSum = 0;
@@ -30,6 +30,7 @@ public class TenthTaskT4 {
                 totalMaxSum = totalSum;
                 stringIndex = i;
             }
+            //а если несколько строк с одинаковой максимальной суммой?
         }
 
         System.out.println("Row with maximum sum of elements: " + stringIndex);

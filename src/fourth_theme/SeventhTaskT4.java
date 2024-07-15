@@ -6,6 +6,7 @@ public class SeventhTaskT4 {
     //и вывести их индексы на экран
 
     public void findMinAndMaxValuesIndexes(){
+        //лучше printMaxValueIndex, printMinValueIndex - find обычно используется в названиях методов, когда они возвращают значение, но пока можно и find использовать
         findMaxValueIndex();
         findMinValueIndex();
     }

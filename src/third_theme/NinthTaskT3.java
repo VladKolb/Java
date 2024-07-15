@@ -13,7 +13,7 @@ public class NinthTaskT3 {
     //сувениров потребуется. С помощью программы подсчитайте
     //сколько счастливых билетов в одном рулоне?
 
-    public void luckyTickets(){
+    public void luckyTickets(){ //это тоже задачка на % - искать цифры через остаток от деления
         int amountOfTickets = 0;
         for(int i = 1; i < 1000000; i++){
             StringBuilder numberString = new StringBuilder();

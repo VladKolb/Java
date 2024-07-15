@@ -6,7 +6,7 @@ public class EighthTaskT4 {
 
     //Выполнить слияние 2 упорядоченных массивов
 
-    public void merging(){
+    public void merging(){//mergeArrays
         int[] array1 = {1, 3, 5, 7, 9};
         int[] array2 = {2, 4, 6, 8, 10};
 
@@ -16,6 +16,10 @@ public class EighthTaskT4 {
         System.arraycopy(array2, 0, array3, array1.length, array2.length);
 
         Arrays.sort(array3);
+        //скорее всего, автор условия надеялся на ручное слияние массивов - задачка, cкорее, на алгоритмы:)
+        //то есть ввести два указателя - на первый и на второй массив, и в цикле пока не вышли за пределы массивов
+        //проверяем элемент первого массива, второго массива, какой меньше - втсавляем в новый массив, увеличиваем указатель)
+        //у тебя тоже хорошее решение)
 
         System.out.println("Merged Ordered Array: " + Arrays.toString(array3));
     }

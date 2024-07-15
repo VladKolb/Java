@@ -14,7 +14,7 @@ public class SixthTaskT4 {
         int negativeArraySize = 0;
 
         for(int number : originalArray){
-            if(number < 0){
+            if(number < 0){ //а если элемент ==0, разве ж он в положительные должен идти?) такие элементы стоит пропускать - замечание на внимательность)
                 negativeArraySize++;
             }
             else{
@@ -25,13 +25,15 @@ public class SixthTaskT4 {
         int[] positiveArray = new int[positiveArraySize];
         int[] negativeArray = new int[negativeArraySize];
 
-        int totalPositiveIndex = 0;
+        int totalPositiveIndex = 0; //почему total? просто positiveArrayIndex?
         int totalNegativeIndex = 0;
 
         for(int number : originalArray){
             if(number < 0){
                 negativeArray[totalNegativeIndex] = number;
                 totalNegativeIndex++;
+                //negativeArray[totalNegativeIndex++] = number; в одну строчку можно
+                //negativeArray[++totalNegativeIndex] = number; а, как считаешь, вот это будет работать корректно? понимаешь разницу?
             }
             else{
                 positiveArray[totalPositiveIndex] =  number;

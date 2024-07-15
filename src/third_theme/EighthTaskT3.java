@@ -10,6 +10,7 @@ public class EighthTaskT3 {
     //имеется 100 тыс. единиц боевой техники и каждая боевая
     //машина имеет номер от 00001 до 99999, то сколько всего
     //номеров придётся исключить?
+    //ух, ты какая забавная задачка :)
 
     public void numbersAmount(){
         int amount = 0;
@@ -27,7 +28,9 @@ public class EighthTaskT3 {
         for(int i = 1; i < 100000; i++){
             char[] digitArray = String.valueOf(i).toCharArray();
             for(int j = 0; j < digitArray.length; j++){
-                String number = "";
+                String number = ""; //удалить - IDEA подсвечивает серым как неиспользуемое
+                //если мы работаем с char, используем == для проверки примитивных типов, не нужно приводить к String
+                //if(digitArray[j] == '4'){
                 if(String.valueOf(digitArray[j]).equals("4")){
                     amount++;
                     break;

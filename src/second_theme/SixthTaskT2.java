@@ -20,7 +20,7 @@ public class SixthTaskT2 {
         }
     }
 
-    public void nextDay(int day, int month, int year){
+    public void nextDay(int day, int month, int year){ //тут тоже много магическиз чисел)
 
         if(day > 31 || day < 1 || month < 1 || month > 12) {
             System.out.println("Invalid input data!");

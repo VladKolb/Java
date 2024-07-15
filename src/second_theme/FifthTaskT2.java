@@ -23,6 +23,13 @@ public class FifthTaskT2 {
 
     public void timeTranslator(int seconds){
         String answer = "";
+        //вот такие страшные числа 29030400 в коде называются magic numbers - их лучше выносить в константы с адекватными именами
+        //например int secondsInYear = 29030400;
+        //а тут вообще можно сделать понятную цепочку констант с низу
+        //int secondsInMin = 60;
+        //int secondsInHour = 60*secondsInMin;
+        //int secondsInDay = 24*secondsInHour;
+        //и так далее
         if(seconds / 29030400 > 0){
             answer += seconds / 29030400 + " years ";
             seconds -= seconds / 29030400 * 29030400;

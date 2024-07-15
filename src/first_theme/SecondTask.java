@@ -6,7 +6,7 @@ public class SecondTask {
 
     // Вывести длину отрезка, проходящего через две точки
 
-    public void solution(){
+    public void solution(){ //название метод printSegmentLength
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter x1 and x2");
 
@@ -20,6 +20,9 @@ public class SecondTask {
             else{
                 System.out.println("Length is " + (x1 - x2));
             }
+            //у тебя тоже замечательное решение, но есть такая хорошая библиотечка Math - лучше использовать ее для подобных операций,
+            //решение в одну строчку уходит
+//            int result = Math.max(x1, x2) - Math.min(x1, x2);
         }
         else{
             System.out.println("This isn't a number.");

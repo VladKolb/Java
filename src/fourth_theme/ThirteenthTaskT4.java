@@ -39,7 +39,7 @@ public class ThirteenthTaskT4 {
         for(int i = 0; i < matrix.length; i++){
             for(int j = 0; j < matrix[i].length; j++){
                 if((i < j && matrix[i].length - 1 - i > j) || (i > j && matrix[i].length - 1 - i < j)){
-                    matrix[i][j] = ((int)(Math.random() * 10) + 1);
+                    matrix[i][j] = ((int)(Math.random() * 10) + 1); //удобнее использовать Random-класс
                 } else if ((i > j && matrix[i].length - 1 - i > j) || (i < j && matrix[i].length - 1 - i < j)) {
                     matrix[i][j] = ((int)(Math.random() * -10) - 1);;
                 }
@@ -72,8 +72,10 @@ public class ThirteenthTaskT4 {
                 }
             }
         }
-
-        double average = totalSum / size;
+        //копи-паст (повторение кода) - лучше переиспользовать метод. одна из целей использования мтеодов - избегать копи-паст
+//        double totalSum = sumOfAllElements(matrix);
+//        double size = matrix.length * matrix[0].length;
+        double average = totalSum / size; //и тут idea желтеньким подсвечивает - введена ненужная переменная, лучге сразу return totalSum / size;
 
         return average;
     }
@@ -83,7 +85,7 @@ public class ThirteenthTaskT4 {
             for(int j = 0; j < matrix[i].length; j++){
                 System.out.print(matrix[i][j] + " ");
             }
-            System.out.println("");
+            System.out.println(""); //System.out.println();
         }
     }
 }

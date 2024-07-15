@@ -12,7 +12,9 @@ public class TwelfthTaskT3 {
             fibonacciNumbersString.append(" ");
         }
 
-        System.out.println(fibonacciNumbersString.toString());
+        System.out.println(fibonacciNumbersString.toString()); //вот тут тоже idea сереньким подсвечиваем
+        //System.out.println(fibonacciNumbersString); //будет работать без toString(), System.out.println сам вызывает .toString() у классов
+        // курсор стоит на сереньком и нажимаешь Alt+Enter, и idea расскажет, что сделать
     }
 
     public int fibonacciNumbers(int pow){

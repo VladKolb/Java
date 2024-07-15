@@ -13,7 +13,7 @@ public class TenthTaskT3 {
     //Напишите программу, которая подсчитает сколько всего таких
     //ошибочных табличек оказалось в бракованной партии.
 
-    public void labelAmount(){
+    public void labelAmount(){ //что-то мне кажется, что и тут на % задачка)
         int amount = 0;
         for(int i = 1; i < 50001; i++){
             if (String.valueOf(i).contains("2")) {
