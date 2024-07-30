@@ -31,7 +31,8 @@ public class EighthTaskT3 {
                 if(String.valueOf(digitArray[j]).equals("4")){
                     amount++;
                     break;
-                } else if(j != digitArray.length - 1){
+                }
+                if (j != digitArray.length - 1) {
                     if(String.valueOf(digitArray[j]).equals("1") && String.valueOf(digitArray[j+1]).equals("3")){
                         amount++;
                         break;
@@ -42,5 +43,6 @@ public class EighthTaskT3 {
 
         System.out.println("Total numbers to be excluded: " + amount);
     }
+
 
 }
