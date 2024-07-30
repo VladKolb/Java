@@ -1,9 +1,12 @@
-import first_theme.*;
+import first_theme.FirstTask;
+import first_theme.SecondTask;
 import fourth_theme.*;
 import second_theme.*;
+import theme5.Fraction;
+import theme5.Phone;
 import third_theme.*;
 
-import javax.swing.*;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -48,6 +51,10 @@ public class Main {
         TwelfthTaskT4 twelfthTaskT4 = new TwelfthTaskT4();
         ThirteenthTaskT4 thirteenthTaskT4 = new ThirteenthTaskT4();
 
+        Fraction fraction = new Fraction(1, 2);
+        Phone phone1 = new Phone("+375(44)111-11-11", "Iphone 15", 0.245);
+        Phone phone2 = new Phone("+375(44)222-22-22", "Iphone 16", 0.325);
+        Phone phone3 = new Phone("+375(44)333-33-33", "Iphone 14", 0.177);
         //firstTask1.solution();
         //secondTask1.solution();
 
@@ -57,6 +64,7 @@ public class Main {
         //fourthTaskT2.weekDay(fourthTaskT2.enterNumber());
         //fifthTaskT2.timeTranslator(fifthTaskT2.enterNumber());
         //sixthTaskT2.nextDay(sixthTaskT2.enterNumber(), sixthTaskT2.enterNumber(), sixthTaskT2.enterNumber());
+        //seventhTaskT2.runTheSolution();
         /* System.out.println("Enter a, b, c");
         eighthTaskT2.findRoots(eighthTaskT2.enterNumber(), eighthTaskT2.enterNumber(), eighthTaskT2.enterNumber());*/
         //ninthTaskT2.restOfTime(ninthTaskT2.enterNumber());
@@ -81,12 +89,26 @@ public class Main {
         //fifthTaskT4.findMinValue();
         //sixthTaskT4.filter();
         //seventhTaskT4.findMinAndMaxValuesIndexes();
-        //eighthTaskT4.merging();
+        //eighthTaskT4.mergingArrays();
         //ninthTaskT4.deleteDuplicates();
         //tenthTaskT4.findStringWithMaxSum();
         //eleventhTaskT4.transposition();
         //twelfthTaskT4.reverseArray();
         //thirteenthTaskT4.competeTask();
+
+        //fraction.printFraction();
+        //fraction.addingFractions(3, 100);
+        //fraction.multiplyingOnDouble(0.1);
+       /* phone1.printValues();
+        phone2.printValues();
+        phone3.printValues();*/
+
+        /*phone1.receiveCall("Влад", phone1.getNumber());
+        phone2.receiveCall("Вова", phone2.getNumber());
+        phone3.receiveCall("Миша", phone3.getNumber());*/
+        //thirteenthTaskT4.competeTask();
     }
 
+        phone1.sendMessage(phone2.getNumber(), phone3.getNumber());
+    }
 }
