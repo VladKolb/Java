@@ -2,6 +2,9 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+*.iml
+.idea
+/src/lessons/lesson3/hometask
 
 ### Eclipse ###
 .apt_generated
@@ -25,5 +28,3 @@ bin/
 ### VS Code ###
 .vscode/
 
-### Mac OS ###
-.DS_Store
