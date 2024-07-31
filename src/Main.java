@@ -13,7 +13,6 @@ import theme7.task3.Task;
 import theme7.task5.*;
 import third_theme.*;
 
-
 public class Main {
     public static void main(String[] args) {
 
@@ -105,7 +104,7 @@ public class Main {
         //fifthTaskT3.sumAndProd(fifthTaskT3.enterNumber());
         //sixthTaskT3.findMax(sixthTaskT3.enterNumber());
         //System.out.println(seventhTaskT3.factorial(seventhTaskT3.enterNumber()));
-        //eighthTaskT3.numbersAmount();
+        eighthTaskT3.numbersAmount();
         //ninthTaskT3.luckyTickets();
         //tenthTaskT3.labelAmount();
         //eleventhTaskT3.symmetricalAmount();
@@ -135,6 +134,8 @@ public class Main {
         /*phone1.receiveCall("Влад", phone1.getNumber());
         phone2.receiveCall("Вова", phone2.getNumber());
         phone3.receiveCall("Миша", phone3.getNumber());*/
+        //thirteenthTaskT4.competeTask();
+    }
 
         //phone1.sendMessage(phone2.getNumber(), phone3.getNumber());
 
