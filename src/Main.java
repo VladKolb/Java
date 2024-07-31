@@ -4,9 +4,14 @@ import fourth_theme.*;
 import second_theme.*;
 import theme5.Fraction;
 import theme5.Phone;
+import theme7.task2.Ball;
+import theme7.task2.Cube;
+import theme7.task3.Fridge;
+import theme7.task3.Lamp;
+import theme7.task3.TV;
+import theme7.task3.Task;
+import theme7.task5.*;
 import third_theme.*;
-
-
 
 public class Main {
     public static void main(String[] args) {
@@ -55,6 +60,29 @@ public class Main {
         Phone phone1 = new Phone("+375(44)111-11-11", "Iphone 15", 0.245);
         Phone phone2 = new Phone("+375(44)222-22-22", "Iphone 16", 0.325);
         Phone phone3 = new Phone("+375(44)333-33-33", "Iphone 14", 0.177);
+
+        Cube cube = new Cube(2);
+        Ball ball = new Ball(2);
+
+        Fridge fridge1 = new Fridge("Atlant", "ATLANT XM 4208-000", 100, true, 900,
+                false, 2);
+        Fridge fridge2 = new Fridge("LG", "LG GA-B509CQWL", 83, false, 2700,
+                true, 4);
+        TV tv1 = new TV("Samsung", "UE50AU7002UXRU", 50, true, 1600, 50);
+        Lamp lamp1 = new Lamp("INhome", "CCO 08", 15, false, 50, "White");
+        Task task3 = new Task();
+
+        Carnation carnation = new Carnation("Beautiful carnation", "Red", 50, 40, 3,
+                "Sweet", true);
+        Gypsophila gypsophila = new Gypsophila("Beautiful gypsophila", "White", 23, 50, 10,
+                2);
+        Lily lily = new Lily("Beautiful lily", "Yellow", 20, 30, 4, 2);
+        Rose rose = new Rose("Beautiful rose", "White", 40, 60, 7, "GoodRose",
+                true);
+        Tulip tulip = new Tulip("Beautiful tulip", "Yellow", 10, 15, 6, "Barhat",
+                10);
+        theme7.task5.Task task5 = new theme7.task5.Task();
+
         //firstTask1.solution();
         //secondTask1.solution();
 
@@ -109,6 +137,14 @@ public class Main {
         //thirteenthTaskT4.competeTask();
     }
 
-        phone1.sendMessage(phone2.getNumber(), phone3.getNumber());
+        //phone1.sendMessage(phone2.getNumber(), phone3.getNumber());
+
+        //System.out.println(ball.getVolume());
+
+        //task3.printTechnique(lamp1, tv1, fridge1, fridge2);
+        //task5.printColorsInBouquet(carnation, lily, gypsophila, rose, tulip);
+        //task5.printMaxLifeTime(carnation, lily, tulip, rose, gypsophila);
+        //task5.printBouquetPrice(tulip, tulip, rose, gypsophila, lily, carnation, carnation);
+
     }
 }
