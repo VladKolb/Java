@@ -4,6 +4,7 @@ import fourth_theme.*;
 import second_theme.*;
 import theme5.Fraction;
 import theme5.Phone;
+import theme7.stask.FruitShop;
 import theme7.task2.Ball;
 import theme7.task2.Cube;
 import theme7.task3.Fridge;
@@ -11,6 +12,8 @@ import theme7.task3.Lamp;
 import theme7.task3.TV;
 import theme7.task3.Task;
 import theme7.task5.*;
+import theme8.FirstTaskT8;
+import theme8.task2.Pair;
 import third_theme.*;
 
 public class Main {
@@ -83,6 +86,15 @@ public class Main {
                 10);
         theme7.task5.Task task5 = new theme7.task5.Task();
 
+        FruitShop fruitShop = new FruitShop();
+
+        FirstTaskT8<Integer> integerFirstTaskT8 = new FirstTaskT8<>(new Integer[]{1, 2, 3, 4, 5});
+        FirstTaskT8<String> stringFirstTaskT8 = new FirstTaskT8<>(new String[]{"Apple", "Banana", "Orange", "Strawberry",
+                "Cherry"});
+
+        Pair<Integer> integerPair = new Pair<>(10, 25);
+        Pair<String> stringPair = new Pair<>("Apple", "Banana");
+
         //firstTask1.solution();
         //secondTask1.solution();
 
@@ -104,7 +116,7 @@ public class Main {
         //fifthTaskT3.sumAndProd(fifthTaskT3.enterNumber());
         //sixthTaskT3.findMax(sixthTaskT3.enterNumber());
         //System.out.println(seventhTaskT3.factorial(seventhTaskT3.enterNumber()));
-        eighthTaskT3.numbersAmount();
+        //eighthTaskT3.numbersAmount();
         //ninthTaskT3.luckyTickets();
         //tenthTaskT3.labelAmount();
         //eleventhTaskT3.symmetricalAmount();
@@ -135,7 +147,7 @@ public class Main {
         phone2.receiveCall("Вова", phone2.getNumber());
         phone3.receiveCall("Миша", phone3.getNumber());*/
         //thirteenthTaskT4.competeTask();
-    }
+
 
         //phone1.sendMessage(phone2.getNumber(), phone3.getNumber());
 
@@ -146,5 +158,14 @@ public class Main {
         //task5.printMaxLifeTime(carnation, lily, tulip, rose, gypsophila);
         //task5.printBouquetPrice(tulip, tulip, rose, gypsophila, lily, carnation, carnation);
 
+        //fruitShop.printPearInfo();
+
+        //System.out.println(integerFirstTaskT8);
+        //System.out.println(integerFirstTaskT8.getElement(2));
+
+        integerPair.replaceLast(44);
+        integerPair.replaceFirst(19);
+        System.out.println(integerPair);
     }
+
 }
